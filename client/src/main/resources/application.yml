@@ -1,0 +1,9 @@
+server.port: 8082
+grpc:
+  client:
+    local-grpc-server:
+      address: 'static://localhost:8100'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+logging.level.io.grpc: debug
